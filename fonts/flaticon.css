@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?fdcaf14daf8092c229d09fed33d12424") format("truetype"),
+url("./flaticon.woff?fdcaf14daf8092c229d09fed33d12424") format("woff"),
+url("./flaticon.woff2?fdcaf14daf8092c229d09fed33d12424") format("woff2"),
+url("./flaticon.eot?fdcaf14daf8092c229d09fed33d12424#iefix") format("embedded-opentype"),
+url("./flaticon.svg?fdcaf14daf8092c229d09fed33d12424#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-building-front:before {
+    content: "\f101";
+}
+.flaticon-cutlery:before {
+    content: "\f102";
+}
+.flaticon-group-profile-users:before {
+    content: "\f103";
+}
+.flaticon-smile:before {
+    content: "\f104";
+}
+.flaticon-play-button:before {
+    content: "\f105";
+}
+.flaticon-clock-circular-outline:before {
+    content: "\f106";
+}
+.flaticon-facebook-app-symbol:before {
+    content: "\f107";
+}
+.flaticon-twitter:before {
+    content: "\f108";
+}
+.flaticon-instagram:before {
+    content: "\f109";
+}
+.flaticon-linkedin:before {
+    content: "\f10a";
+}
+.flaticon-up-arrow-with-scribble:before {
+    content: "\f10b";
+}

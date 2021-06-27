@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dinner Restaurant</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- CountUp -->
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- BS 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <!-- Slick - Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- Facybox - Slider Video -->
+    <link rel="stylesheet" href="./css/video.css" />
+    <!-- Font Flaticon -->
+    <link rel="stylesheet" type="text/css" href="./fonts/flaticon.css" />
+    <!-- Link MAIN cSS -->
+    <link rel="stylesheet" href="./css/hieu.css" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/huy.css" />
+</head>
+
+<body id="body">
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="container">
+            <!-- HEADER -->
+            <header>
+                <div class="header__content">
+                    <div class="header__logo">
+                        <h1><a href="#" class="logo-brand">Diner</a></h1>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__search">
+                            <div class="search__bar">
+                                <form class="search position-relative">
+                                    <input type="search" class="search__input" name="search" placeholder="Search here.." />
+                                    <span class="fa fa-search search__icon"></span>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header__switch">
+                            <button class="btn" id="switchButton" title="Click to switch theme">
+                  <i class="fa fa-sun"></i>
+                  <i class="fa fa-moon"></i>
+                </button>
+                        </div>
+                        <div class="mobile-nav-button text-center">
+                            <button class="overlay-open" onclick="openNav()">
+                  <i class="fa fa-bars"></i>
+                </button>
+                        </div>
+                        <div id="mySidenav" class="sidenav">
+                            <span class="overlay-close" href="javascript:void(0)" onclick="closeNav()"><i class="fa fa-times"></i
+                ></span>
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Blog</a>
+                            <a href="#">404</a>
+                            <a href="#">Landing Page</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Shot Codes</a>
+                            <a href="#">Email</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="banner__content">
+                <h3 class="mb-4">The only thing we love more than food is you!</h3>
+                <p class="pr-lg-5 mt-md-4 mt-3">
+                    Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed consequuntur illum facere.
+                </p>
+                <a class="btn btn-white mt-sm-5 mt-4 mr-2" href="#">
+            Read More
+            <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span
+          ></a>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="about py-5">
+        <div class="container py-md-5">
+            <div class="row">
+                <div class="col-lg-5 about__left">
+                    <div class="about-title">
+                        <h6 class="title">About Us</h6>
+                        <h3 class="title-sub mb-4">
+                            We found our creative space that is open for you.
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-lg-7 about__right pl-lg-5 mt-lg-0 mt-3">
+                    <p class="">
+                        Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit,
+                        culpa!Lorem ipsum init dolor sit.
+                    </p>
+                    <p class="mt-3">
+                        Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AGENT -->
+    <section class="agent">
+        <div class="container-fluid px-lg-0">
+            <div class="row align-items-center no-gutters">
+                <div class="col-lg-6 px-lg-0 pt-lg-0 pt-5">
+                    <div class="agent__image"></div>
+                </div>
+                <div class="col-lg-6 px-lg-4 py-lg-3 py-4">
+                    <div class="agent__right p-md-5 p-3">
+                        <h6 class="title two">More than 3000 Restaurants</h6>
+                        <h3 class="title-sub two">
+                            Book a table easly at the best price
+                        </h3>
+                        <p class="my-3">
+                            Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
+                        </p>
+
+                        <div class="agent__content mt-5">
+                            <div class="agent__bottom">
+                                <div class="icon mb-4">
+                                    <span class="fa fa-thumbs-up"></span>
+                                </div>
+                                <a href="#" class="agent__link">Best Deals</a>
+                                <p class="mt-2">
+                                    Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                                </p>
+                            </div>
+
+                            <div class="agent__bottom">
+                                <div class="icon mb-4">
+                                    <span class="fa fa-utensils"></span>
+                                </div>
+                                <a href="#" class="agent__link">Best Food</a>
+                                <p class="mt-2">
+                                    Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CATEGORIES -->
+    <section class="categories">
+        <div class="container pt-5 py-md-5 py-2">
+            <div class="categories__title text-center">
+                <h6 class="title">What's New</h6>
+                <h3 class="title-sub mb-lg-5">Popular Categories</h3>
+            </div>
+            <div class="row categories__content">
+                <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-lg-0 mt-4">
+                    <div class="gal-slide-img">
+                        <a href="#"><img src="./img//g1.jpg" class="img img-fluid" alt="" /></a>
+                    </div>
+                    <div class="gal-slide-info p-md-5 p-4">
+                        <a href="#">
+                            <h4 class="mt-4 mb-0">Vegetarian</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1"><span>$350</span></h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-lg-0 mt-4">
+                    <div class="gal-slide-img">
+                        <a href="#"><img src="./img//g2.jpg" class="img img-fluid" alt="" /></a>
+                    </div>
+                    <div class="gal-slide-info p-md-5 p-4">
+                        <a href="#">
+                            <h4 class="mt-4 mb-0">Drinks</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1"><span>$550</span></h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-lg-0 mt-4">
+                    <div class="gal-slide-img">
+                        <a href="#"><img src="./img//g3.jpg" class="img img-fluid" alt="" /></a>
+                    </div>
+                    <div class="gal-slide-info p-md-5 p-4">
+                        <a href="#">
+                            <h4 class="mt-4 mb-0">Lunch</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1"><span>$650</span></h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2">
+                    <div class="gal-slide-img">
+                        <a href="#"><img src="./img//g4.jpg" class="img img-fluid" alt="" /></a>
+                    </div>
+                    <div class="gal-slide-info p-md-5 p-4">
+                        <a href="#">
+                            <h4 class="mt-4 mb-0">Bakery</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1"><span>$550</span></h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2">
+                    <div class="gal-slide-img">
+                        <a href="#"><img src="./img//g5.jpg" class="img img-fluid" alt="" /></a>
+                    </div>
+                    <div class="gal-slide-info p-md-5 p-4">
+                        <a href="#">
+                            <h4 class="mt-4 mb-0">Desserts</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1"><span>$750</span></h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2">
+                    <div class="gal-slide-img">
+                        <a href="#"><img src="./img//g6.jpg" class="img img-fluid" alt="" /></a>
+                    </div>
+                    <div class="gal-slide-info p-md-5 p-4">
+                        <a href="#">
+                            <h4 class="mt-4 mb-0">Pizza</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1"><span>$850</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FEATURES -->
+    <section id="features" class="features py-5">
+        <div class="container py-lg-5 py-md-3 py-3">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <span class="fa fa-users"></span>
+                            </div>
+                            <div class="info">
+                                <p>01</p>
+                                <h4><a href="#">Soup</a></h4>
+                            </div>
+                        </div>
+                        <p class="mt-3">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <span class="fa fa-shield-alt"></span>
+                            </div>
+                            <div class="info">
+                                <p>02</p>
+                                <h4><a href="#">Drinks</a></h4>
+                            </div>
+                        </div>
+                        <p class="mt-3">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <span class="fa fa-thermometer-full"></span>
+                            </div>
+                            <div class="info">
+                                <p>03</p>
+                                <h4><a href="#">Pizza</a></h4>
+                            </div>
+                        </div>
+                        <p class="mt-3">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <span class="fa fa-american-sign-language-interpreting"></span>
+                            </div>
+                            <div class="info">
+                                <p>04</p>
+                                <h4><a href="#">Breakfast</a></h4>
+                            </div>
+                        </div>
+                        <p class="mt-3">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <span class="fa fa-paint-brush"></span>
+                            </div>
+                            <div class="info">
+                                <p>05</p>
+                                <h4><a href="#">Lunch</a></h4>
+                            </div>
+                        </div>
+                        <p class="mt-3">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <span class="fa fa-eraser"></span>
+                            </div>
+                            <div class="info">
+                                <p>06</p>
+                                <h4><a href="#">Dinner</a></h4>
+                            </div>
+                        </div>
+                        <p class="mt-3">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hieu -->
+    <!-- DELICIOUS -->
+    <section class="delicious py-5">
+        <div class="delicious__overlay"></div>
+
+        <div class="container delicious__heading pt-lg-2 pb-lg-4 py-4">
+            <div class="delicious__content text-center py-lg-5">
+                <h3 class="px-lg-5">Deliciousness jumping into the mouth.</h3>
+                <div class="delicious__btn pb-lg-5">
+                    <a href="#" class="btn btn-style btn-font mt-sm-5 mt-4 mr-lg-4 mr-2">
+              Read More
+              <i class="fas fa-angle-right"></i>
+            </a>
+                    <a href="#" class="btn btn-style-primary btn-font btn-font mt-sm-5 mt-4">
+              Contact Us
+              <i class="fas fa-angle-right"></i>
+            </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Number - Counting -->
+    <section class="number">
+        <div class="number__container container text-center">
+            <div class="row">
+                <div class="col-md-3 col-6 mt-4">
+                    <div class="number__item p-4">
+                        <div class="number__item-icon mt-3 mb-2">
+                            <i class="flaticon-building-front"></i>
+                        </div>
+                        <span class="number__item--counting counter">15,100</span>
+                        <p>Branches</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mt-4">
+                    <div class="number__item p-4">
+                        <div class="number__item-icon mt-3 mb-2">
+                            <i class="flaticon-cutlery"></i>
+                        </div>
+                        <div class="number__item--counting counter">19,256</div>
+                        <p>Food Items</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mt-4">
+                    <div class="number__item p-4">
+                        <div class="number__item-icon mt-3 mb-2">
+                            <i class="flaticon-group-profile-users"></i>
+                        </div>
+                        <div class="number__item--counting counter">12,100</div>
+                        <p>Chefs</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mt-4">
+                    <div class="number__item p-4">
+                        <div class="number__item-icon mt-3 mb-2">
+                            <i class="flaticon-smile"></i>
+                        </div>
+                        <div class="number__item--counting counter">2,560</div>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="video pb-5">
+        <div class="video__container container">
+            <div class="video__img">
+                <a data-fancybox="" data-width="770" data-height="434" data-small-btn="true" href="https://player.vimeo.com/video/305185528" class="video__icon-link">
+                    <div class="video__icon">
+                        <i class="flaticon-play-button"></i>
+                    </div>
+                </a>
+
+                <img src="./img/banner3.jpg" alt="" />
+                <div class="video__overlay"></div>
+            </div>
+        </div>
+    </section>
+    <!-- BLOG  -->
+    <section class="blog py-5">
+        <div class="blog__container container">
+            <h6 class="title text-center">Latest Posts</h6>
+            <h3 class="title-sub text-center">Blog Posts</h3>
+            <div class="blog__content">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="blog__item mt-5">
+                            <div class="blog__img">
+                                <img src="./img/banner1.jpg" alt="" />
+                                <div class="blog__img-clock">
+                                    <a href="#">Reciepe</a>
+                                    <i class="flaticon-clock-circular-outline"></i>
+                                    <p>10 Min Cook</p>
+                                </div>
+                            </div>
+                            <div class="blog__text">
+                                <a href="#">The Best Cookie Recipes To Bake This Weekend</a>
+                                <p>
+                                    Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.
+                                </p>
+                                <div class="blog__read d-flex justify-content-between">
+                                    <div class="blog__avatar">
+                                        <img src="./img/team1.jpg" alt="" />
+                                        <a href="#">Rashed Kabir </a>
+                                    </div>
+                                    <div class="blog__btn">
+                                        <p>Read More</p>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="blog__item mt-5">
+                            <div class="blog__img">
+                                <img src="./img/banner3.jpg" alt="" />
+                                <div class="blog__img-clock">
+                                    <a href="#">Soup</a>
+                                    <i class="flaticon-clock-circular-outline"></i>
+                                    <p>10 Min Cook</p>
+                                </div>
+                            </div>
+                            <div class="blog__text">
+                                <a href="#">The Best Cookie Recipes To Bake This Weekend</a>
+                                <p>
+                                    Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.
+                                </p>
+                                <div class="blog__read d-flex justify-content-between">
+                                    <div class="blog__avatar">
+                                        <img src="./img/team2.jpg" alt="" />
+                                        <a href="#">Rashed Kabir </a>
+                                    </div>
+                                    <div class="blog__btn">
+                                        <p>Read More</p>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="blog__item mt-5">
+                            <div class="blog__img">
+                                <img src="./img/banner1.jpg" alt="" />
+                                <div class="blog__img-clock">
+                                    <a href="#">Drinks</a>
+                                    <i class="flaticon-clock-circular-outline"></i>
+                                    <p>15 Min Cook</p>
+                                </div>
+                            </div>
+                            <div class="blog__text">
+                                <a href="#">The Best Cookie Recipes To Bake This Weekend</a>
+                                <p>
+                                    Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.
+                                </p>
+                                <div class="blog__read d-flex justify-content-between">
+                                    <div class="blog__avatar">
+                                        <img src="./img/team3.jpg" alt="" />
+                                        <a href="#">Rashed Kabir </a>
+                                    </div>
+                                    <div class="blog__btn">
+                                        <p>Read More</p>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="say">
+        <div class="say__container container">
+            <h6 class="title text-center">Testimonials</h6>
+            <h3 class="title-sub text-center">What People Say</h3>
+
+            <div class="say__carousel">
+                <div>
+                    <div class="say__iteam text-center">
+                        <img src="./img/team1.jpg" alt="" />
+
+                        <span>OMG! I cannot believe. It's Awesome</span>
+
+                        <p>
+                            My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in ligula.
+                        </p>
+                        <div class="say__name">
+                            <h3>Johnson william</h3>
+                            <p>Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="say__iteam text-center">
+                        <img src="./img/team2.jpg" alt="" />
+
+                        <span>Simply the best. Better than all the rest.</span>
+
+                        <p>
+                            My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in ligula.
+                        </p>
+                        <div class="say__name">
+                            <h3>Alexander sakura</h3>
+                            <p>Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="say__iteam text-center">
+                        <img src="./img/team3.jpg" alt="" />
+
+                        <span>OMG! I cannot believe. It's Awesome</span>
+
+                        <p>
+                            My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in ligula.
+                        </p>
+                        <div class="say__name">
+                            <h3>Johnson william</h3>
+                            <p>Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="say__iteam text-center">
+                        <img src="./img/team2.jpg" alt="" />
+
+                        <span>OMG! I cannot believe. It's Awesome</span>
+
+                        <p>
+                            My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in ligula.
+                        </p>
+                        <div class="say__name">
+                            <h3>Julia sakura</h3>
+                            <p>Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer pt-5">
+        <div class="footer__container container pb-5 pt-3">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="footer__social">
+                        <a href="#">Diner</a>
+                        <p>
+                            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit.
+                        </p>
+                        <div class="footer__social--icon">
+                            <div>
+                                <a href="#"><i class="flaticon-facebook-app-symbol"></i></a>
+                                <a href="#"><i class="flaticon-twitter"></i></a>
+                                <a href="#"><i class="flaticon-instagram"></i></a>
+                                <a href="#"><i class="flaticon-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-2">
+                    <div class="footer__menu">
+                        <h3>Usefull Links</h3>
+                        <ul class="footer__click">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog posts</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-2">
+                    <div class="footer__menu">
+                        <h3>More Info</h3>
+                        <ul class="footer__click">
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Vision & Values</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="#">Media</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="footer__input">
+                        <h3>Subscribe to our Newsletter</h3>
+                        <p>
+                            Enter your email and receive the latest news, updates and special offers from us.
+                        </p>
+                        <form class="footer__social--form">
+                            <input class="footer__input-item mb-3" type="email" name="email" placeholder="Your Email Address" />
+
+                            <button type="submit" class="btn btn-primary">
+                  Subscribe Now
+                </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__coppy">
+            <div class="
+            footer__coppy--container
+            container
+            d-flex
+            justify-content-between
+            py-3
+          ">
+                <span>© 2021 Diner. All rights reserved. Design by
+            <a href=" # ">W3Layouts</a>
+          </span>
+
+                <div class="footer__contact">
+                    <a href="# ">Careers</a>
+                    <a href="# ">Privacy Policy</a>
+
+                    <a href="# ">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Back TO TOp -->
+
+    <a class="backToTop cd-top text-replace js-cd-top"><i class="flaticon-up-arrow-with-scribble"></i
+    ></a>
+
+    <!-- Counting up - jquery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js "></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $(".counter").counterUp({
+                delay: 10,
+                time: 7000,
+            });
+        });
+    </script>
+    <!-- BS JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- Facybox - Slider Video -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js "></script>
+    <!-- Slick - Carousel JS -->
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+    <script>
+        $(".say__carousel ").slick({
+            dots: true,
+            arrows: false,
+        });
+    </script>
+    <!-- MAIN JS -->
+    <script src="./js/util.js"></script>
+    <script src="./js/hieu.js"></script>
+    <script src="./js/huy.js"></script>
+</body>
+
+</html>

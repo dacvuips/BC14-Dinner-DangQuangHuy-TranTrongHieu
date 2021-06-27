@@ -1,0 +1,69 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?fdcaf14daf8092c229d09fed33d12424") format("truetype"),
+url("./flaticon.woff?fdcaf14daf8092c229d09fed33d12424") format("woff"),
+url("./flaticon.woff2?fdcaf14daf8092c229d09fed33d12424") format("woff2"),
+url("./flaticon.eot?fdcaf14daf8092c229d09fed33d12424#iefix") format("embedded-opentype"),
+url("./flaticon.svg?fdcaf14daf8092c229d09fed33d12424#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "building-front": "\f101",
+    "cutlery": "\f102",
+    "group-profile-users": "\f103",
+    "smile": "\f104",
+    "play-button": "\f105",
+    "clock-circular-outline": "\f106",
+    "facebook-app-symbol": "\f107",
+    "twitter": "\f108",
+    "instagram": "\f109",
+    "linkedin": "\f10a",
+    "up-arrow-with-scribble": "\f10b",
+);
+
+.flaticon-building-front:before {
+    content: map-get($flaticon-map, "building-front");
+}
+.flaticon-cutlery:before {
+    content: map-get($flaticon-map, "cutlery");
+}
+.flaticon-group-profile-users:before {
+    content: map-get($flaticon-map, "group-profile-users");
+}
+.flaticon-smile:before {
+    content: map-get($flaticon-map, "smile");
+}
+.flaticon-play-button:before {
+    content: map-get($flaticon-map, "play-button");
+}
+.flaticon-clock-circular-outline:before {
+    content: map-get($flaticon-map, "clock-circular-outline");
+}
+.flaticon-facebook-app-symbol:before {
+    content: map-get($flaticon-map, "facebook-app-symbol");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-linkedin:before {
+    content: map-get($flaticon-map, "linkedin");
+}
+.flaticon-up-arrow-with-scribble:before {
+    content: map-get($flaticon-map, "up-arrow-with-scribble");
+}
